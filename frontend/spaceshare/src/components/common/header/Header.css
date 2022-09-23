@@ -1,0 +1,57 @@
+header{
+    background-color: #fff;
+    height: 10vh;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header img{
+    width: 170px;
+}
+
+header a{
+    margin-left: 30px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+header a:hover{
+    color: blanchedalmond;
+}
+header .toggle{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    header{
+        padding: 0;
+    }
+    header img{
+        margin-top: 15px;
+    }
+    header .button{
+        display: none;
+    }
+    header .nav .flex{
+        display: none;
+    }
+    header .toggle{
+        display: block;
+        margin-top: 8px;
+    }
+    header .small{
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        left: 0;
+        background-color: gray;
+        padding: 20px;
+
+    }
+    header li a{
+        display: inline-block;
+        margin-bottom: 20px;
+        color: white;
+    }
+}
